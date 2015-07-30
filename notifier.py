@@ -24,7 +24,7 @@ if __name__ == '__main__':
         ip = requests.get('http://httpbin.org/ip').json()['origin']
         old_ip = _get_old_ip()
         if old_ip != ip:
-            messenger.send_text(cell_number, ip)
+            messenger.send_text(cell_number, "\n\nNew IP is: " + ip)
             _save_new_ip(ip)
     except Exception, ex:
         msg = '%s - Error: %s' %(strftime("%m-%d-%Y %H:%M:%S", gmtime()), str(ex))
