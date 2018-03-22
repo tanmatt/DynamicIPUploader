@@ -1,14 +1,13 @@
-#Dynamic IP Uploader
+# Dynamic IP Uploader
 
-## The problem
+### The problem
 Most of my cronjobs run on a server.
 The server doesn't have a static IP (I don't want to spend money on it.)
 Yet, I need to know the public IP to ssh/ VNC into it. 
 
-### The solution
+### The solution 
 This program solves the problem of changing IP by sending text message with new IP. 
 Just follow the installation steps below (5 min).
------------
 
 ### Installation steps
 - Fork it
